@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.myap.mobile" version="2.25" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.myapp.mobile" version="2.25" xmlns="http://www.w3.org/ns/widgets">
   <name>Nike Air Force Experience</name>
   <description>Aplicación diseñada con A-Frame. Realidad Virtual para promocionar una nueva línea de tenis para Nike.</description>
   <author>Isaac R. Quiroz</author>
