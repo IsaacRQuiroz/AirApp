@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NikeAirExperience</title>
+     <script src="js/aframe.min.js"></script> 
+</head>
+<body>
+
+<a-scene>                                                                <!-- Todo emieza con a- -->
+  <a-assets>                                                            <!--Para cargar previamente-->
+    
+    <img id="texturaCielo" src="imagen/cielo6.jpg">
+    <img id="TexturaMarmol" src="imagen/marblo.jpg">
+    <img id="TexturaNegro" src="imagen/negro.jpg">
+    <img id="TexturaBlanco" src="imagen/blanco.jpg">
+      
+    <a-asset-item id="rosa-obj" src="modelos3d/tenis1.obj"></a-asset-item>   <!--llama a los modelos3d y se les da nombre con la id-->
+    <a-asset-item id="rosa-mtl" src="modelos3d/tenis1.mtl"></a-asset-item>
+    <a-asset-item id="morado-obj" src="modelos3d/tenis3.obj"></a-asset-item>  
+    <a-asset-item id="morado-mtl" src="modelos3d/tenis3.mtl"></a-asset-item>
+    <a-asset-item id="amarillo-obj" src="modelos3d/tenis4.obj"></a-asset-item>  
+    <a-asset-item id="amarillo-mtl" src="modelos3d/tenis4.mtl"></a-asset-item>
+   
+      
+    <a-asset-item id="rosa_letras-obj" src="modelos3d/letras1.obj"></a-asset-item>  
+    <a-asset-item id="rosa_letras-mtl" src="modelos3d/letras1.mtl"></a-asset-item>
+    <a-asset-item id="morado_letras-obj" src="modelos3d/letras2.obj"></a-asset-item>  
+    <a-asset-item id="morado_letras-mtl" src="modelos3d/letras2.mtl"></a-asset-item>
+    <a-asset-item id="amarillo_letras-obj" src="modelos3d/letras3.obj"></a-asset-item>  
+    <a-asset-item id="amarillo_letras-mtl" src="modelos3d/letras3.mtl"></a-asset-item>
+      
+    <a-asset-item id="logo1-obj" src="modelos3d/nikelogo1.obj"></a-asset-item>  
+    <a-asset-item id="logo1-mtl" src="modelos3d/nikelogo1.mtl"></a-asset-item>
+    <a-asset-item id="logo2-obj" src="modelos3d/nikelogo2.obj"></a-asset-item>  
+    <a-asset-item id="logo2-mtl" src="modelos3d/nikelogo2.mtl"></a-asset-item>
+    <a-asset-item id="logo3-obj" src="modelos3d/nikelogo3.obj"></a-asset-item>  
+    <a-asset-item id="logo3-mtl" src="modelos3d/nikelogo3.mtl"></a-asset-item>
+      
+    <a-asset-item id="logo3st-obj" src="modelos3d/nikelogo3sintextura.obj"></a-asset-item>  
+    <a-asset-item id="logo3st-mtl" src="modelos3d/nikelogo3sintextura.mtl"></a-asset-item>
+    
+    
+    
+    <audio id="backsound" src="imagen/audi.mp3" preload="auto"></audio>
+  </a-assets>
+  
+ 
+    
+<!-- Agregar un modelo 3d en formato .obj -->  
+
+  
+    
+  <a-entity obj-model="obj: #rosa-obj; mtl: #rosa-mtl"  position="0 -2 -20" scale="1 1 1" rotation="0 -60 0" > 
+    <a-animation attribute="position" direction="alternate" dur="1500" repeat="indefinite"
+      to="0 -2.2 -20"></a-animation> <!-- Aquí se puede animar-->
+    <a-animation attribute="rotation" begin="click" dur="2000" to="0 300 0"></a-animation>
+    <a-animation attribute="scale" begin="mouseenter" dur="300" to="1.1 1.1 1.1"></a-animation>
+    <a-animation attribute="scale" begin="mouseleave" dur="300" to="1 1 1"></a-animation>
+  </a-entity>  
+    
+    
+    <a-entity obj-model="obj: #rosa_letras-obj; mtl: #rosa_letras-mtl"  position="0.081 8.7 -25" scale="0.250 0.250 0.250" rotation="100 0 0" > 
+    <a-animation attribute="rotation" dur="4500" repeat="indefinite" to="460 0 0"></a-animation>
+    </a-entity>  
+    
+
+    <a-entity obj-model="obj: #amarillo-obj; mtl: #amarillo-mtl"  position="-22 -2 0" scale="1 1 1" rotation="0 20 -14" >
+    <a-animation attribute="position" direction="alternate" dur="1500" repeat="indefinite"
+      to="-22 -2.2 0"></a-animation> 
+    <a-animation attribute="rotation" begin="click" dur="2000" to="0 380 -14"></a-animation>
+    <a-animation attribute="scale" begin="mouseenter" dur="300" to="1.1 1.1 1.1"></a-animation>
+    <a-animation attribute="scale" begin="mouseleave" dur="300" to="1 1 1"></a-animation>
+    </a-entity>  
+    
+    <a-entity obj-model="obj: #amarillo_letras-obj; mtl: #amarillo_letras-mtl"  position="-26.5 8.7 0" scale="0.250 0.250 0.250" rotation="100 85 0" > 
+    <a-animation attribute="rotation" dur="4500" repeat="indefinite" to="460 85 0"></a-animation>
+    </a-entity>  
+    
+    
+      <a-entity obj-model="obj: #morado-obj; mtl: #morado-mtl"  position="24 -2 0" scale="1 1 1" rotation="0 -140 -14" >
+    <a-animation attribute="position" direction="alternate" dur="1500" repeat="indefinite"
+      to="24 -2.2 0"></a-animation> 
+    <a-animation attribute="rotation" begin="click" dur="2000" to="0 220 -14"></a-animation>
+    <a-animation attribute="scale" begin="mouseenter" dur="300" to="1.1 1.1 1.1"></a-animation>
+    <a-animation attribute="scale" begin="mouseleave" dur="300" to="1 1 1"></a-animation>
+      </a-entity>  
+    
+    <a-entity obj-model="obj: #morado_letras-obj; mtl: #morado_letras-mtl"  position="26.5 8.9 0" scale="0.250 0.250 0.250" rotation="100 -83 0" material="color: #ffffff; metalness:1; roughness: 0.1; sphericalEnvMap: #TexturaMarmol;" > 
+    <a-animation attribute="rotation" dur="4500" repeat="indefinite" to="460 -83 0"></a-animation>
+    </a-entity>  
+    
+    
+    
+    
+     <a-entity obj-model="obj: #logo1-obj; mtl:#logo-mtl" position="-5.357 0.152 25" scale="1.5 1.5 1.5" rotation="90 180 0" material="color: #ffffff; metalness:1; roughness: 0.1; sphericalEnvMap: #TexturaMarmol;">
+     <a-animation attribute="position" direction="alternate" dur="1300" repeat="indefinite" to="-5.357 0.352 25"></a-animation>
+     <a-animation attribute="rotation" begin="mouseenter" dur="2000" to="450 180 0"></a-animation>
+    </a-entity>
+    
+     <a-entity obj-model="obj: #logo2-obj; mtl:#logo-mtl" position="0.372 5.9 25" scale="1.5 1.5 1.5" rotation="90 180 0" material="color: #ffffff; metalness:1; roughness: 0.1; sphericalEnvMap: #TexturaMarmol;">
+     <a-animation attribute="position" direction="alternate" dur="1300" repeat="indefinite" to="0.372 6.1 25"></a-animation>  
+     <a-animation attribute="rotation" begin="mouseenter" dur="2000" to="450 180 0"></a-animation>
+    </a-entity>
+    
+     <a-entity obj-model="obj: #logo3-obj; mtl:#logo-mtl" position="0 1.401 25" scale="1.5 1.5 1.5" rotation="90 180 0" material="color: #ffffff; metalness:1; roughness: 0.1; sphericalEnvMap: #TexturaMarmol;">
+     <a-animation attribute="position" direction="alternate" dur="1300" repeat="indefinite" to="0 1.601 25"></a-animation>  
+     <a-animation attribute="rotation" begin="mouseenter" dur="2000" to="450 180 0"></a-animation>
+    </a-entity>
+    
+    
+    
+    
+    
+    
+    
+
+    <a-entity
+        geometry="primitive: box; width: 1000; height: 1000;" rotation="-90 0 0" position="0 -8 0"
+        material="src: #TexturaNegro; repeat: 200 200; transparent: true; metalness:1; roughness: 1; sphericalEnvMap: #texturaCielo;">
+    </a-entity>
+    
+    
+    
+    <a-sky height="2048" radius="35" src="#texturaCielo" theta-length="90" width="2048"></a-sky> <!--añadir cielo por medio de una media esfera-->
+    
+ 
+    
+    
+  <a-light type="ambient" color="#445451"></a-light>
+  <a-light type="point" intensity="0.8" position="0 17 0"></a-light>
+  <a-light type="point" intensity="0.8" position="0 30 -27"></a-light>
+ 
+ 
+          
+
+  <a-entity sound="src: #backsound; autoplay: true; loop: true"></a-entity> 
+  
+  <a-entity position="0 1.6 3.7" ">        
+        <a-camera>
+    <a-cursor color="#cde5dd">
+        </a-camera>
+  </a-entity>
+      
+</a-scene>   
+</body>
+</html>

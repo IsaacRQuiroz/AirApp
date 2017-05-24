@@ -1,0 +1,58 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 17.05.2017 02:28:28
+
+newmtl 04___Default
+	Ns 35.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5020 0.1843 0.4902
+	Kd 0.5020 0.1843 0.4902
+	Ks 0.4590 0.4590 0.4590
+	Ke 0.0000 0.0000 0.0000
+	map_bump C:\Users\Isaac\Desktop\NIKE3D\textures\suede_bump.jpg
+	bump C:\Users\Isaac\Desktop\NIKE3D\textures\suede_bump.jpg
+
+newmtl 05___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.3216 0.5255 0.8314
+	Kd 0.3216 0.5255 0.8314
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_bump C:\Users\Isaac\Desktop\NIKE3D\textures\cuero.jpg
+	bump C:\Users\Isaac\Desktop\NIKE3D\textures\cuero.jpg
+
+newmtl agujetas
+	Ns 29.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5020 0.1843 0.4902
+	Kd 0.5020 0.1843 0.4902
+	Ks 0.1890 0.1890 0.1890
+	Ke 0.0000 0.0000 0.0000
+	map_bump C:\Users\Isaac\Desktop\NIKE3D\textures\tela.jpg
+	bump C:\Users\Isaac\Desktop\NIKE3D\textures\tela.jpg
+
+newmtl 07___Default
+	Ns 29.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5020 0.1843 0.4902
+	Kd 0.5020 0.1843 0.4902
+	Ks 0.4860 0.4860 0.4860
+	Ke 0.0000 0.0000 0.0000
+	map_bump C:\Users\Isaac\Desktop\NIKE3D\textures\cuero.jpg
+	bump C:\Users\Isaac\Desktop\NIKE3D\textures\cuero.jpg
